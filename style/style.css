@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    list-style: none;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+}
+.content{
+    width: 140px;
+    height: 140px;
+    /* border: 1px solid #000; */
+    background-color: rgb(98, 0, 255);
+    animation-name: Boxanim;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+}
+@keyframes Boxanim {
+    0%{
+        transform: translate(0) ;
+        background-color: black;
+    }
+    10%{
+        transform: translate(620px,250px); 
+        border-radius: 50%;
+        background-color: yellow;
+    }
+    15%{
+        transform: translate(0);   
+        border-radius: 0;  
+        background-color: black;
+    }
+    30%{
+        transform: translateX(1250px);
+        border-radius: 0;
+        background-color: black;
+    }
+    40%{
+       transform:translate(620px, 300px) ; 
+       border-radius: 50%;
+       background-color: red;
+    }
+    45%{
+        transform: translate(1250px) ;
+        border-radius: 0;
+        background-color: black;
+    }
+    50%{
+        transform: translate(1250px) translateY(530px);
+        border-radius: 0;
+        background-color: black;
+    }
+    60%{
+        transform:translate(620px, 300px) ; 
+        border-radius: 50%;
+        background-color: rebeccapurple;
+    }
+    65%{
+        transform: translate(1250px) translateY(530px);
+        border-radius: 0;
+        background-color: black;
+    }
+    80%{
+        transform: translateY(550px) translate(0);
+        border-radius: 0;
+        background-color: black;
+    }
+    90%{
+        transform:translate(620px, 300px) ; 
+        border-radius: 50%;
+        background-color: fuchsia;
+    }
+    95%{
+        transform: translateY(550px) translate(0);
+        border-radius: 0;
+        background-color: black;
+    }
+    100%{
+        transform: translate(0);
+        background-color: black;
+    }
+    
+}
